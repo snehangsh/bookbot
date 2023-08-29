@@ -2,7 +2,7 @@
 def main():
     book_path = "books/frankenstein.txt"
     text = get_book_text(book_path)
-    print(f"=== Begin report of {book_path} ===")
+    print(f"********** Begin report of {book_path} **********")
     num = get_number_words(text)
     print(f"{num} words found in the document")
     #count = get_number_words(text)
@@ -11,7 +11,7 @@ def main():
     ls.sort()
     for char in ls:
         print(f"The '{char[0]}' character was found {char[1]} times")
-    print("=== End Report ===")
+    print("********** End Report **********")
 
 def get_book_text(path):
     with open(path) as f:
